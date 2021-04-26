@@ -1,30 +1,182 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>My very first Website</title>
+    <title>A Season To Remember</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+            href="https://fonts.googleapis.com/css?family=Caveat"
+            rel="stylesheet"/>
+    <link
+            href="https://fonts.googleapis.com/css?family=Oswald"
+            rel="stylesheet"/>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+    <script src="https://d3js.org/d3-color.v2.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
+
+    <style>
+
+    </style>
 </head>
+<body class="total-page">
 
-<body>
+<div class="bg">
+<!--    <div class="bottom-left">Hello World</div>-->
+<!--    <div class="top-left">Top Left</div>-->
+<!--    <div class="top-right">Top Right</div>-->
+<!--    <div class="bottom-right">Bottom Right</div>-->
 
-    <h1>Welcome to Eric's personal website</h1>
+    <div class="centered">
+        <div class="cover">
+            <div id="title">
+                <h1>“A SEASON TO REMEBER”</h1>
+                <h2>The 2019-2020 NBA Season Story</h2>
+                <p>
+                    Name: Siyu(Eric) Zhao<br />
+                    Instructor: Alark Joshi
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <p>Below is a list of the technical skills I have: </p>
 
-    <ul>
-        <li>React</li>
-        <li>Python</li>
-        <li>Java</li>
-        <li>C++</li>
-    </ul>
 
-     <p>This is a link to my <a href="Resume.pdf">Resume</a>.</p>
+<div class="page" id="new-sheriff">
+    <div class="three-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-     <p>This is a link to my <a href="https://bl.ocks.org/siyuericzhao/5c4f267675094834a06f98c450b37f35">Block</a>.</p>
 
-     <img class="responsive" src="pexels-simon-migaj-747964.jpg" alt="">
+    <div class="section-title">
+        <h3>"New Sheriffs In Town"</h3>
+    </div>
+    <div>
+        <p>
+            The 2019 NBA offseason started with the blockbuster Anthony Davis trade to the Lakers. With Brooklyn Nets
+            acquiring Kevin Durant and the LA Clippers signing the Finals MVP Kawhi Leonard, these three teams suddenly became championship contenders.
+        </p>
+    </div>
+
+
+    <div id="three-players-comparision">
+        <div id="area1"></div>
+        <div id="area2"></div>
+        <div id="area3"></div>
+
+        <script src="NewSheriffPage/Anthony_Davis.js"></script>
+        <script src="NewSheriffPage/Kevin_Durant.js"></script>
+        <script src="NewSheriffPage/Kawhi_Leonard.js"></script>
+    </div>
+
+</div>
+
+
+
+<div class="page" id="regular-season">
+    <div class="three-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="section-title">
+        <h3>"Battling Through The Regular Season"</h3>
+    </div>
+    <div>
+        <p>
+            As teams battling for the playoffs positions during this regular season, the LA rival Lakers and Clippers are on there way of getting the top two
+            seeds in the West Conference. However, the much anticipated Brooklyn Nets team did not meet the expectation mainly due to injury of their two super star
+            player Kevin Durant and Kyrie Irving.
+        </p>
+    </div>
+
+    <div id="regular-season-team-comparison">
+        <div id="area4"></div>
+        <div id="area5"></div>
+        <div id="area6"></div>
+
+        <script src="RegularSeasonPage/EastTeamsBarChart.js"></script>
+        <script src="RegularSeasonPage/WestTeamsBarChart.js"></script>
+        <script src="RegularSeasonPage/FaceToFaceMatrix.js"></script>
+
+    </div>
+
+</div>
+
+
+
+
+<div class="page" id="covid-impact">
+    <div class="three-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="section-title">
+        <h3>"COVID, The Orlando Bubble, Longest Season"</h3>
+    </div>
+
+    <div>
+        <p>
+            2020 has been a challenge year for the whole world. Due to the sever impact of the pandemic, the NBA has been shut down for
+            a long period of time and thus suffered tremendous amount of loss.
+        </p>
+    </div>
+
+    <div id="covid-bubble-longest">
+        <div id="area10"></div>
+        <div id="area11"></div>
+        <div id="area12"></div>
+
+        <script src="COVIDPage/NBARevenue.js"></script>
+    </div>
+
+</div>
+
+
+
+<div class="page" id="remember-kobe">
+    <div class="three-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="section-title">
+        <h3>"Mamba Out"</h3>
+    </div>
+    <div class="kobe"></div>
+
+    <div>
+        <p>
+            On January 26, 2020, Kobe Bryant, the NBA legend who led the Los Angeles Lakers to five championships over a 20-year career,
+            was killed in a helicopter crash along with other 8 people including his 13-year-old daughter, Gianna. Although Kobe is no longer with us,
+            his 'Mamba Mentality' remains and will keep inspire and motivate all of us to forge ahead in life despite the challenges ans hardships we might face.
+        </p>
+    </div>
+
+    <div id="remembering-kobe-bryant">
+        <div id="area7"></div>
+        <div id="area8"></div>
+        <div id="area9"></div>
+
+        <script src="KobePage/PointsPerGame.js"></script>
+        <script src="KobePage/CareerShotTypes.js"></script>
+        <script src="KobePage/HeatMap.js"></script>
+    </div>
+
+</div>
+
+
 
 </body>
-
 </html>
