@@ -1,0 +1,277 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 280px;
+    height: 40px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-family:'Open Sans', sans-serif;
+    background: #FFDC00;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+div.tooltip1 {
+    position: absolute;
+    text-align: center;
+    width: 280px;
+    height: 90px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-family:'Open Sans', sans-serif;
+    background: #FFDC00;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
+div.tooltip2 {
+    position: absolute;
+    text-align: center;
+    width: 280px;
+    height: 65px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-family:'Open Sans', sans-serif;
+    background: #FFDC00;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
+
+.bg {
+    /* The image used */
+    background-image: url("672280.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.kobe {
+    /* The image used */
+    background-image: url("KobePage/Kobe1.jpg");
+
+    /* Full height */
+    height: 29%;
+    /* Center and scale the image nicely */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* transition */
+.transition-circle-svg {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cover #title {
+    position: relative;
+    bottom: 10px;
+    color: white;
+    left: 20px;
+}
+
+.cover #title h1 {
+    font-family: 'Oswald';
+    font-size: 80px;
+    margin-bottom: 80px;
+}
+.cover #title h2 {
+    font-size: 36px;
+}
+
+.cover #title p {
+    font-size: 24px;
+    line-height: 140%;
+}
+
+/* general layout settings */
+/* page */
+.page {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.page p {
+    text-align: left;
+    font-size: 24px;
+    line-height: 150%;
+    width: 800px;
+    margin: auto;
+    color:  #202125;
+}
+
+
+/* new sheriff */
+#new-sheriff {
+    //display: block;
+    background-color: #f6f6f5;
+    height: 200%;
+}
+
+
+/* regular season */
+#regular-season {
+//display: block;
+    background-color: #f6f6f5;
+    height: 400%;
+}
+
+/* regular season */
+#remember-kobe {
+//display: block;
+    background-color: #f6f6f5;
+    height: 320%;
+}
+
+
+/* section */
+.section-title {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-size: 48px;
+}
+
+/*!* section *!*/
+/*.title-and-intro {*/
+/*    margin-top: 20px;*/
+/*    margin-bottom: 80px;*/
+/*    font-size: 48px;*/
+/*    background: lightgrey;*/
+/*}*/
+
+
+/* three-dots divider */
+.three-dots {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.three-dots span {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: black;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.total-page{
+    background-color: #f6f6f5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.axis--x path {
+    display: none;
+}
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+body {
+    margin: 0px;
+}
+.tick text, .legendCells text {
+    fill: #111111;
+    font-size: 10pt;
+    font-family: 'Open Sans', sans-serif;
+}
+.axis-label, .legend-label {
+    fill: #AAAAAA;
+    font-size: 10pt;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.subtitle1 {
+    font-size: 30pt;
+    font-family: 'Open Sans', sans-serif;
+    alignment-baseline: middle;
+    fill: #001f3f;
+}
+
+.subtitle {
+    font-size: 20pt;
+    alignment-baseline: middle;
+    fill: #001f3f;
+}
+circle:hover {
+    fill: #F012BE;
+}
