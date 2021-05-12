@@ -1,0 +1,956 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 280px;
+    height: 40px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-family:'Open Sans', sans-serif;
+    background: #FFDC00;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+div.tooltip1 {
+    position: absolute;
+    text-align: center;
+    width: 280px;
+    height: 90px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-family:'Open Sans', sans-serif;
+    background: #FFDC00;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
+div.tooltip2 {
+    position: absolute;
+    text-align: center;
+    width: 280px;
+    height: 65px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-family:'Open Sans', sans-serif;
+    background: #FFDC00;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
+
+.bg {
+    /* The image used */
+    background-image: url("672280.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.kobe {
+    /* The image used */
+    background-image: url("KobePage/Kobe1.jpg");
+
+    /* Full height */
+    height: 29%;
+    /* Center and scale the image nicely */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.lakers-pic {
+    /* The image used */
+    background-image: url("PlayOffPage/Lakers.png");
+
+    /* Full height */
+    height: 28%;
+    /* Center and scale the image nicely */
+    background-position: initial;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.love-pic {
+    /* The image used */
+    background-image: url("Ending/Love.jpg");
+
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: 30%;
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: .5;
+}
+
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* transition */
+.transition-circle-svg {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cover #title {
+    position: relative;
+    bottom: 10px;
+    color: white;
+    left: 20px;
+}
+
+.cover #title h1 {
+    font-family: 'Oswald';
+    font-size: 90px;
+    margin-bottom: 80px;
+}
+.cover #title h2 {
+    font-size: 36px;
+}
+
+.cover #title p {
+    font-size: 24px;
+    line-height: 140%;
+}
+
+/* general layout settings */
+/* page */
+.page {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.page p {
+    text-align: left;
+    font-size: 24px;
+    line-height: 150%;
+    width: 800px;
+    margin: auto;
+    color:  #202125;
+}
+
+
+/* new sheriff */
+#new-sheriff {
+    //display: block;
+    background-color: #f6f6f5;
+    height: 200%;
+}
+
+
+/* regular season */
+#regular-season {
+//display: block;
+    background-color: #f6f6f5;
+    height: 400%;
+}
+
+/* regular season */
+#remember-kobe {
+//display: block;
+    background-color: #f6f6f5;
+    height: 530%;
+}
+
+
+/* regular season */
+#playoff {
+//display: block;
+    background-color: #f6f6f5;
+    height: 400%;
+}
+
+
+/* section */
+.section-title {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-size: 48px;
+}
+
+/*!* section *!*/
+/*.title-and-intro {*/
+/*    margin-top: 20px;*/
+/*    margin-bottom: 80px;*/
+/*    font-size: 48px;*/
+/*    background: lightgrey;*/
+/*}*/
+
+
+/* three-dots divider */
+.three-dots {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.three-dots span {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: black;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.total-page{
+    background-color: #f6f6f5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.axis--x path {
+    display: none;
+}
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+body {
+    margin: 0px;
+}
+.tick text, .legendCells text {
+    fill: #111111;
+    font-size: 10pt;
+    font-family: 'Open Sans', sans-serif;
+}
+.axis-label, .legend-label {
+    fill: #AAAAAA;
+    font-size: 10pt;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.subtitle1 {
+    font-size: 30pt;
+    font-family: 'Open Sans', sans-serif;
+    alignment-baseline: middle;
+    fill: #001f3f;
+}
+
+.subtitle {
+    font-size: 20pt;
+    alignment-baseline: middle;
+    fill: #001f3f;
+}
+circle:hover {
+    fill: #F012BE;
+}
+
+
+
+
+
+/* highlight text */
+.highlight-keywords {
+    color: black;
+}
+
+
+
+/* highlight text */
+.highlight-keywords2 {
+    color: #fdb927;
+}
+
+
+
+
+
+
+
+
+
+/*body{*/
+/*    background-color: whitesmoke;*/
+/*}*/
+
+:root {
+    --accent-color: #E8336D;
+}
+
+/*svg {*/
+/*    background-color: white;*/
+/*    font-family: 'Lato';*/
+/*}*/
+
+path.line {
+    fill: none;
+    stroke: lightgrey;
+    stroke-width: 2px;
+}
+
+.annotation path {
+    stroke: var(--accent-color);
+    fill: none;
+}
+
+.annotation path.connector-arrow,
+.title text, .annotation text,
+.annotation.callout.circle .annotation-subject path{
+    fill: var(--accent-color);
+}
+.annotation-note-bg {
+    fill: rgba(255, 255, 255, 0);
+}
+
+.annotation-note-title {
+    font-weight: bold;
+}
+
+.annotation.xythreshold {
+    cursor: move;
+}
+
+.hidden {
+    display: none;
+}
+
+text.hover {
+    font-size: .7em;
+}
+
+text.title {
+    font-size: 1.1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#playoff-battle {
+    font: 14px sans-serif;
+    letter-spacing: 1px;
+    /*background-color: white;*/
+}
+
+.link {
+    fill: none;
+    stroke: #a0a0a0;
+    stroke-width: 1px;
+}
+
+.win {
+    stroke-width: 3px !important;
+}
+
+#bracketGraph {
+    position: relative;
+}
+
+#bracketBox .table {
+    position: absolute;
+    background-color: #79b3e2;
+    padding: 5px 7px 3px;
+    line-height: 2;
+    min-width: 185px;
+    box-shadow: 0px 2px 2px 1px rgba(34, 34, 34, 0.1);
+    color: #222222;
+    border: 0px solid rgba(34, 34, 34, 0.1);
+}
+
+
+
+
+#bracketBox .played {
+    --border-width: 0px;
+}
+
+#bracketBox .thirdplace .title {
+    color: #222222;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#bracketBox .thirdplace .content {
+    color: #222222;
+    font-size: 15px;
+    padding: 5px 3px 3px;
+    text-transform: uppercase;
+    background-color: #FEEBEE;
+    min-width: 185px;
+    line-height: 1.2;
+    border: 1px solid rgba(34, 34, 34, 0.1);
+}
+
+#bracketBox .row  {
+    display: table-row;
+}
+
+#bracketBox .cell {
+    padding-left: 10px;
+    display: table-cell;
+    text-transform: uppercase;
+}
+
+.winner {
+    font-weight: bold;
+}
+
+.cell.score {
+    border-left: 1px solid rgba(34, 34, 34, 0.1);
+}
+
+.cell.name {
+    min-width: 140px;
+    padding-right: 10px;
+}
+
+div.tooltip_bracket {
+    position: absolute;
+    text-align: left;
+    width: 210px;
+    height: 220px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-family:'Open Sans', sans-serif;
+    background: #FFDC00;
+    border: 0px;
+    padding-left: 30px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* new Sheriff page waypoint css*/
+
+
+
+
+
+
+
+/*.none {*/
+/*    display: none;*/
+/*}*/
+
+
+
+/* time of misery */
+/*#new-sheriff {*/
+/*    display: block;*/
+/*    background-color: var(--BACKGROUND);*/
+/*    color: var(--LIGHT_GREY);*/
+/*}*/
+
+/*#new-sheriff .three-dots span {*/
+/*    background: var(--LIGHT_GREY);*/
+/*}*/
+
+/*#time-of-misery p {*/
+/*    color: var(--LIGHT_GREY);*/
+/*}*/
+
+
+.misery-section {
+    margin-top: 100px;
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+}
+
+.new-sheriff-text {
+    width: 40%;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.new-sheriff-text .text-box {
+    width: 60%;
+    border-radius: 10px;
+    border-width: 3px;
+    /*border-color: var(--LAKERS_YELLOW);*/
+    border-style: solid;
+    vertical-align: center;
+
+    padding: 6%;
+    margin: auto;
+    margin-bottom: 120%;
+    /* margin-top: 30%; */
+
+    font-size: 30px;
+    text-align: left;
+    line-height: 1.2em;
+
+    opacity: 0.3;
+}
+
+.new-sheriff-text .text-box.seen {
+    opacity: 1;
+}
+
+
+
+
+.three-player-graph-container {
+    /*position: absolute;*/
+    /*margin-top: 80px;*/
+    /*top: 100px;*/
+    /*right: 100px;*/
+    margin-left: 25%;
+    /*-webkit-transform: translate3d(0, 0, 0);*/
+    /*-moz-transform: translate3d(0, 0, 0);*/
+    /*transform: translate3d(0, 0, 0);*/
+}
+
+
+.three-player-graph-container.is-fixed {
+    top: -11%;
+    position: fixed;
+}
+
+.three-player-graph-container.is-bottom {
+    bottom: 0;
+    top: auto;
+}
+
+#kawhi-leonard {
+    margin-bottom: 80%;
+}
+
+.three-player-graph-container #ad-graph {
+    /* top: 150px; */
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.three-player-graph-container #kd-graph {
+    /* top: 150px; */
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.three-player-graph-container #kawhi-graph {
+    top: 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 280px;
+    height: 40px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-family:'Open Sans', sans-serif;
+    background: #FFDC00;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
+
+
+.three-player-graph-container.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 280px;
+    height: 40px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-family:'Open Sans', sans-serif;
+    background: #FFDC00;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
+/*.draftWordGroup {*/
+/*    display: none;*/
+/*}*/
+
+/*.draftWordGroup div {*/
+/*    padding: 10px;*/
+/*    color: black;*/
+/*    font-size: 15px;*/
+/*    line-height: 150%;*/
+/*    text-align: left;*/
+/*    background-color: var(--LIGHT_GREY);*/
+/*    border: solid var(--LAKERS_YELLOW) 2px;*/
+/*    border-radius: 2px;*/
+/*}*/
+
+/*.area1 {*/
+/*    display: none;*/
+/*}*/
+
+.none {
+    opacity: 0.1;
+}
+
+.block {
+    display: block;
+}
+
+
+
+
+.text-box {
+    width: 12%;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    vertical-align: center;
+
+    padding: 1%;
+    /*margin: auto;*/
+    margin-bottom: 2.5%;
+     margin-top: 1%;
+    margin-left: 100px;
+
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.0em;
+    opacity: 0.05;
+    overflow: hidden;
+}
+
+
+.text-box.seen {
+    opacity: 1;
+}
+
+
+.big-letter {
+    font-family: 'Brush Script Std';
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    margin-left: 20px;
+    opacity : 0.05
+}
+
+.big-letter.seen {
+    opacity: 1;
+}
+
+
+
+.area1{
+    opacity: 0.1
+}
+
+.area1.seen {
+    opacity: 1;
+}
+
+.area2{
+    opacity: 0.1
+}
+
+.area2.seen {
+    opacity: 1;
+}
+
+.area3{
+    opacity: 0.1
+}
+
+.area3.seen {
+    opacity: 1;
+}
+
+
+
+/*regular season page colors*/
+.clippers {
+    color: red;
+}
+
+
+.nets {
+    color: blue;
+}
+
+
+.lakers {
+    color: #782fbc;
+}
+
+
+
+
+.visible {
+    visibility: hidden;
+}
+
+
+
+
+
+/*kobe page colors*/
+.number{
+    font-size: 70px;
+    visibility: hidden;
+
+}
+
+
+.number-v2{
+    font-size: 70px;
+    /*font-family: 'Brush Script MT', cursive;*/
+    visibility: visible;
+    color: #fdb927;
+}
+
+
+.number-v3{
+    font-size: 70px;
+    /*font-family: 'Brush Script MT', cursive;*/
+    visibility: visible;
+    color: #782fbc;
+}
+
+
+.kobe {
+    opacity: 0.1;
+}
+
+
+.kobe-visible {
+    opacity: 1;
+}
+
+.dear-basketball-link {
+    width: 10%;
+    border-radius: 10px;
+    border-width: 3px;
+    /*border-color: var(--LAKERS_YELLOW);*/
+    border-style: solid;
+    vertical-align: center;
+
+    padding: 1%;
+    margin: auto;
+    margin-bottom: 7%;
+    /* margin-top: 30%; */
+
+    font-size: 23px;
+    text-align: left;
+    line-height: 1.2em;
+
+    opacity: 0.4;
+}
+
+
+.dear-basketball-link-fixed {
+
+    position: fixed;
+        right: 10%;
+        bottom: 5%;
+
+    width: 10%;
+    border-radius: 10px;
+    border-width: 3px;
+    /*border-color: var(--LAKERS_YELLOW);*/
+    border-style: solid;
+    vertical-align: center;
+
+    padding: 1%;
+    margin: auto;
+    margin-bottom: 7%;
+    /* margin-top: 30%; */
+
+    font-size: 23px;
+    text-align: left;
+    line-height: 1.2em;
+
+    opacity: 0.3;
+
+}
+
+
+.dear-basketball-text {
+    opacity: 1;
+    font-size: 23px;
+    color: black;
+    font-weight: bolder;
+}
+
+
+.heat-text {
+    color: red;
+}
+
+.celtics-text {
+    color: forestgreen;
+}
+
+.lakers-pic {
+    opacity: 0.1;
+}
+
+.lakers-pic-seen {
+    opacity: 1;
+}
+
+
+.the-end-intro {
+    opacity: 1; !important;
+}
+
+
+.love-text {
+    color: red;
+    font-weight: bolder;
+}
+
+
+.purple {
+    font-weight: bolder;
+    color: #782fbc;
+}
+
+.red {
+    font-weight: bolder;
+    color: red;
+}
+
+.blue {
+    font-weight: bolder;
+    color: blue;
+}
+
+
+.kevin {
+    font-weight: bolder;
+    color: blue;
+}
+
+.kyrie {
+    font-weight: bolder;
+    color: blue;
+}
