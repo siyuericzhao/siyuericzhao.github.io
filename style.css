@@ -1,0 +1,727 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+/* background of the total website */
+.total-page{
+    background-color: #f6f6f5;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 280px;
+    height: 40px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-family:'Open Sans', sans-serif;
+    background: #FFDC00;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+div.tooltip1 {
+    position: absolute;
+    text-align: center;
+    width: 280px;
+    height: 90px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-family:'Open Sans', sans-serif;
+    background: #FFDC00;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
+div.tooltip2 {
+    position: absolute;
+    text-align: center;
+    width: 280px;
+    height: 65px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-family:'Open Sans', sans-serif;
+    background: #FFDC00;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
+
+/* Background style for the cover page */
+.bg {
+    /* The image used */
+    background-image: url("backGround.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+/* Background style for Kobe page */
+.kobe {
+    /* The image used */
+    background-image: url("KobePage/KobeBackGround1.jpg");
+
+    /* Full height */
+    height: 29%;
+    /* Center and scale the image nicely */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Background style for Lakers Page */
+.lakers-pic {
+    /* The image used */
+    background-image: url("PlayOffPage/Lakers.png");
+
+    /* Full height */
+    height: 28%;
+    /* Center and scale the image nicely */
+    background-position: initial;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+
+/* Background style for love picture*/
+.love-pic {
+    /* The image used */
+    background-image: url("Ending/Love.jpg");
+
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: 30%;
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: .5;
+}
+
+
+
+
+
+/*Cover page positioned at the center*/
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/* Cover Page Layout */
+
+.cover #title {
+    position: relative;
+    bottom: 10px;
+    color: white;
+    left: 20px;
+}
+
+.cover #title h1 {
+    font-family: 'Oswald';
+    font-size: 90px;
+    margin-bottom: 80px;
+}
+.cover #title h2 {
+    font-size: 36px;
+}
+
+.cover #title p {
+    font-size: 24px;
+    line-height: 140%;
+}
+
+/* general layout settings */
+/* page */
+.page {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* general layout for all the text in p tag across all pages */
+.page p {
+    text-align: left;
+    font-size: 24px;
+    line-height: 150%;
+    width: 800px;
+    margin: auto;
+    color:  #202125;
+}
+
+
+
+
+
+/* Layouts of every main page*/
+
+/* section title fonts*/
+.section-title {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-size: 48px;
+}
+
+/* new sheriff page layout*/
+#new-sheriff {
+    //display: block;
+    background-color: #f6f6f5;
+    height: 200%;
+}
+
+
+/* regular season page layout*/
+#regular-season {
+//display: block;
+    background-color: #f6f6f5;
+    height: 400%;
+}
+
+/* remembering kobe page layout */
+#remember-kobe {
+//display: block;
+    background-color: #f6f6f5;
+    height: 530%;
+}
+
+
+/* play-off page layout */
+#playoff {
+//display: block;
+    background-color: #f6f6f5;
+    height: 400%;
+}
+
+
+
+
+/* dots divider for each page */
+.three-dots {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.three-dots span {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: black;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* highlight text */
+.highlight-keywords {
+    color: black;
+}
+
+/* highlight text */
+.highlight-keywords2 {
+    color: #fdb927;
+}
+
+
+
+
+
+
+
+
+/* Style for Line Graph in the */
+
+:root {
+    --accent-color: #E8336D;
+}
+
+path.line {
+    fill: none;
+    stroke: lightgrey;
+    stroke-width: 2px;
+}
+
+.annotation path {
+    stroke: var(--accent-color);
+    fill: none;
+}
+
+.annotation path.connector-arrow,
+.title text, .annotation text,
+.annotation.callout.circle .annotation-subject path{
+    fill: var(--accent-color);
+}
+.annotation-note-bg {
+    fill: rgba(255, 255, 255, 0);
+}
+
+.annotation-note-title {
+    font-weight: bold;
+}
+
+.annotation.xythreshold {
+    cursor: move;
+}
+
+.hidden {
+    display: none;
+}
+
+text.hover {
+    font-size: .7em;
+}
+
+text.title {
+    font-size: 1.1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Playoff-battle bracket layouts */
+
+#playoff-battle {
+    font: 14px sans-serif;
+    letter-spacing: 1px;
+    /*background-color: white;*/
+}
+
+.link {
+    fill: none;
+    stroke: #a0a0a0;
+    stroke-width: 1px;
+}
+
+.win {
+    stroke-width: 3px !important;
+}
+
+#bracketGraph {
+    position: relative;
+}
+
+#bracketBox .table {
+    position: absolute;
+    background-color: #79b3e2;
+    padding: 5px 7px 3px;
+    line-height: 2;
+    min-width: 185px;
+    box-shadow: 0px 2px 2px 1px rgba(34, 34, 34, 0.1);
+    color: #222222;
+    border: 0px solid rgba(34, 34, 34, 0.1);
+}
+
+
+#bracketBox .played {
+    --border-width: 0px;
+}
+
+#bracketBox .thirdplace .title {
+    color: #222222;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#bracketBox .thirdplace .content {
+    color: #222222;
+    font-size: 15px;
+    padding: 5px 3px 3px;
+    text-transform: uppercase;
+    background-color: #FEEBEE;
+    min-width: 185px;
+    line-height: 1.2;
+    border: 1px solid rgba(34, 34, 34, 0.1);
+}
+
+#bracketBox .row  {
+    display: table-row;
+}
+
+#bracketBox .cell {
+    padding-left: 10px;
+    display: table-cell;
+    text-transform: uppercase;
+}
+
+.winner {
+    font-weight: bold;
+}
+
+.cell.score {
+    border-left: 1px solid rgba(34, 34, 34, 0.1);
+}
+
+.cell.name {
+    min-width: 140px;
+    padding-right: 10px;
+}
+
+div.tooltip_bracket {
+    position: absolute;
+    text-align: left;
+    width: 210px;
+    height: 220px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-family:'Open Sans', sans-serif;
+    background: #FFDC00;
+    border: 0px;
+    padding-left: 30px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
+
+
+
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 280px;
+    height: 40px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-family:'Open Sans', sans-serif;
+    background: #FFDC00;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
+
+
+.three-player-graph-container.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 280px;
+    height: 40px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-family:'Open Sans', sans-serif;
+    background: #FFDC00;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
+
+
+.none {
+    opacity: 0.1;
+}
+
+.block {
+    display: block;
+}
+
+
+.text-box {
+    width: 12%;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    vertical-align: center;
+
+    padding: 1%;
+    /*margin: auto;*/
+    margin-bottom: 2.5%;
+     margin-top: 1%;
+    margin-left: 100px;
+
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.0em;
+    opacity: 0.05;
+    overflow: hidden;
+}
+
+
+.text-box.seen {
+    opacity: 1;
+}
+
+
+.big-letter {
+    font-family: 'Brush Script Std';
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    margin-left: 20px;
+    opacity : 0.05
+}
+
+.big-letter.seen {
+    opacity: 1;
+}
+
+
+
+.area1{
+    opacity: 0.1
+}
+
+.area1.seen {
+    opacity: 1;
+}
+
+.area2{
+    opacity: 0.1
+}
+
+.area2.seen {
+    opacity: 1;
+}
+
+.area3{
+    opacity: 0.1
+}
+
+.area3.seen {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+/*kobe page text colors and style*/
+
+.number{
+    font-size: 70px;
+    visibility: hidden;
+
+}
+
+.number-v2{
+    font-size: 70px;
+    /*font-family: 'Brush Script MT', cursive;*/
+    visibility: visible;
+    color: #fdb927;
+}
+
+
+.number-v3{
+    font-size: 70px;
+    /*font-family: 'Brush Script MT', cursive;*/
+    visibility: visible;
+    color: #782fbc;
+}
+
+.kobe {
+    opacity: 0.1;
+}
+
+.kobe-visible {
+    opacity: 1;
+}
+
+.dear-basketball-link {
+    width: 10%;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: #FFDC00;
+    border-style: solid;
+    vertical-align: center;
+
+    padding: 1%;
+    margin: auto;
+    margin-bottom: 7%;
+    /* margin-top: 30%; */
+
+    font-size: 23px;
+    text-align: left;
+    line-height: 1.2em;
+
+    opacity: 0.4;
+}
+
+
+.dear-basketball-link-fixed {
+
+    position: fixed;
+        right: 10%;
+        bottom: 5%;
+
+    width: 10%;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: #FFDC00;
+    border-style: solid;
+    vertical-align: center;
+
+    padding: 1%;
+    margin: auto;
+    margin-bottom: 7%;
+    /* margin-top: 30%; */
+
+    font-size: 23px;
+    text-align: left;
+    line-height: 1.2em;
+
+    opacity: 0.3;
+
+}
+
+
+.dear-basketball-text {
+    opacity: 1;
+    font-size: 23px;
+    color: black;
+    font-weight: bolder;
+}
+
+
+.heat-text {
+    color: red;
+}
+
+.celtics-text {
+    color: forestgreen;
+}
+
+.lakers-pic {
+    opacity: 0.1;
+}
+
+.lakers-pic-seen {
+    opacity: 1;
+}
+
+
+.the-end-intro {
+    opacity: 1; !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*regular season page colors*/
+.clippers {
+    color: red;
+}
+
+
+.nets {
+    color: blue;
+}
+
+
+.lakers {
+    color: #782fbc;
+}
+
+
+.visible {
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+/*Different Text Colors for highlighted keywords*/
+
+
+.love-text {
+    color: red;
+    font-weight: bolder;
+}
+
+
+.purple {
+    font-weight: bolder;
+    color: #782fbc;
+}
+
+.red {
+    font-weight: bolder;
+    color: red;
+}
+
+.blue {
+    font-weight: bolder;
+    color: blue;
+}
+
+
+.kevin {
+    /*font-weight: bolder;*/
+    color: blue;
+}
+
+.kyrie {
+    /*font-weight: bolder;*/
+    color: blue;
+}
