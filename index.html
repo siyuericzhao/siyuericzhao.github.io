@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Season To Remember</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+            href="https://fonts.googleapis.com/css?family=Caveat"
+            rel="stylesheet"/>
+    <link
+            href="https://fonts.googleapis.com/css?family=Oswald"
+            rel="stylesheet"/>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js">
+    </script>
+    <script src="https://d3js.org/d3-color.v2.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
+    <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+    <script src="noframework.waypoints.min.js"></script>
+</head>
+<body class="total-page">
+<div class="bg">
+
+    <div class="centered">
+        <div class="cover">
+            <div id="title">
+                <h1>“A SEASON TO REMEMBER”</h1>
+                <h2>The 2019-2020 NBA Season Story</h2>
+                <p>
+                    Name: Siyu(Eric) Zhao<br />
+                    Instructor: Alark Joshi
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page" id="new-sheriff">
+    <div class="three-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="section-title">
+        <h3>"New <span class="highlight-keywords" id="sheriff">Sheriffs</span> In Town"</h3>
+    </div>
+    <div>
+        <p id="new-sheriff-intro">
+            The 2019 NBA offseason started with the blockbuster <span class="highlight-keywords" id="anthony-davis">Anthony Davis</span> trade to the <span id="laker-first">LA Lakers</span>. With <span id="nets-first">Brooklyn Nets</span>
+            acquiring <span class="highlight-keywords" id="kevin-durant">Kevin Durant</span> and the <span id="clippers-first">LA Clippers</span> signing the 2019 Finals MVP <span class="highlight-keywords" id="kawhi-leonard">Kawhi Leonard</span>, these three teams suddenly became championship contenders.
+        </p>
+    </div>
+    <div id="three-players-comparison">
+        <div style="display: block">
+            <div id="area1" class="area1"></div>
+        </div>
+        <div style="display: block">
+            <div id="area2" class="area2"></div>
+        </div>
+        <div style="display: block">
+            <div id="area3" class="area3"></div>
+        </div>
+        <script src="NewSheriffPage/Anthony_Davis.js"></script>
+        <script src="NewSheriffPage/Kevin_Durant.js"></script>
+        <script src="NewSheriffPage/Kawhi_Leonard.js"></script>
+        <script src="NewSheriffPage/newSheriffPageWP.js"></script>
+    </div>
+</div>
+<div class="page" id="regular-season">
+    <div class="three-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="section-title">
+        <h3>"Battling Through The <span id="regular-season-caption">Regular Season</span>"</h3>
+    </div>
+    <div>
+        <p id="regular-season-intro">
+            As teams battling for the playoffs positions during this regular season, the LA rival <span id="lakers">Lakers</span> and <span id="clippers">Clippers</span> are on there way of getting the top two
+            seeds in the Western Conference. However, the much anticipated <span id="nets">Brooklyn Nets</span> team did not meet the expectation mainly due to injury of their two super star
+            player <span id="kevin">Kevin Durant</span> and <span id="kyrie-irving">Kyrie Irving</span>, they only ranked <span id="7th">7th</span> in the Eastern Conference with merely 35 wins.
+        </p>
+    </div>
+    <div id="regular-season-team-comparison">
+        <div id="area4"></div>
+        <div id="area5"></div>
+        <div id="area6"></div>
+        <script src="RegularSeasonPage/EastTeamsBarChart.js"></script>
+        <script src="RegularSeasonPage/WestTeamsBarChart.js"></script>
+        <script src="RegularSeasonPage/FaceToFaceMatrix.js"></script>
+        <script src="RegularSeasonPage/regularSeasonWP.js"></script>
+    </div>
+</div>
+<div class="page" id="covid-impact">
+    <div class="three-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="section-title">
+        <h3>"<span id="covid-caption">COVID</span>, The <span id="orlando-caption">Orlando</span> Bubble, <span id="longest-caption">Longest</span> Season"</h3>
+    </div>
+    <div>
+        <p id="covid-intro">
+            2020 has been a challenge year for the whole world. Due to the severe impact of the pandemic, the NBA has been forced to shut down for
+            a long period of time and thus suffered from tremendous <span id="loss">loss</span>.
+        </p>
+    </div>
+    <div id="covid-bubble-longest">
+        <div id="area10"></div>
+        <div id="season-days"></div>
+        <div id="area12"></div>
+        <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+        <script src="COVIDPage/NBARevenue.js"></script>
+        <script src="COVIDPage/lineGraphDays.js"></script>
+        <script src="COVIDPage/covidWP.js"></script>
+    </div>
+</div>
+<div class="page" id="remember-kobe">
+    <div class="three-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="section-title">
+        <h3><span class="number" id="number-24">#24</span> "Mamba Out" <span class="number" id="number-8">#8</span></h3>
+    </div>
+    <div class="kobe" id="kobe-picture">
+    </div>
+    <div>
+        <p id="kobe-intro">
+            On January 26, 2020, <span id="kobe-text">Kobe Bryant</span>, the NBA legend who led the Los Angeles Lakers to <span id="five-time">five</span> championships over a <span id="20-year">20-year</span> career,
+            was killed in a helicopter crash along with other 8 people including his 13-year-old daughter, Gianna. Although Kobe is no longer with us,
+            his '<span id="mamba-mentality">Mamba Mentality</span>' remains and will keep inspire and motivate all of us to forge ahead in life despite the challenges and hardships we might face.
+        </p>
+    </div>
+    <div id="remembering-kobe-bryant">
+        <div id="area7"></div>
+        <div id="area8"></div>
+        <div id="area9"></div>
+        <!--        <div> <a class="dear-basketball-link" id = "kobe-link" href="https://www.youtube.com/watch?v=qEYyWxIe68A">Link to Kobe's Oscar award winning film:-->
+        <span class="dear-basketball-text">Kobe's Oscar award winning film: Dear Basketball</span></a>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qEYyWxIe68A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <script src="KobePage/PointsPerGame.js"></script>
+    <script src="KobePage/CareerShotTypes.js"></script>
+    <script src="KobePage/AllTimeHeatMap.js"></script>
+    <script src="KobePage/kobeWP.js"></script>
+    <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+</div>
+</div>
+<div class="page" id="playoff">
+    <div class="three-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="section-title">
+        <h3>"It don't means a thing, without the <span id="ring">Ring</span>. The playoff starts."</h3>
+    </div>
+    <div>
+        <p id="playoff-intro">
+            After a nearly 3 month of shut down. The playoff started in the "Orlando bubble" an isolation zone at Walt Disney World in Bay Lake, Florida, with <span id="16-teams">16 teams</span> competing for one goal, to win the <span id="championship">championship</span>
+        </p>
+    </div>
+    <div id="playoff-battle">
+        <div id="bracketGraph" style="display:flex;">
+            <svg id='svg_id'></svg>
+            <div id="bracketBox"></div>
+
+        </div>
+        <script src="PlayOffPage/bracket.js"></script>
+
+    </div>
+    <div>
+        <p id="lakers-intro">
+            After almost a year of arduous journey. The <span id = "laker-champion">Los Angeles Lakers</span> became the final champion of this Special
+            and Memorable Season after defeating the <span id = "heat-champion">Miami Heat</span> in the NBA Finals, winning their <span id = "17-champion">17th</span> franchise title, tying the <span id = "celtics-champion">Boston Celtics</span> as a franchise with
+            the <span id = "most-champion">most</span> Championship Titles in the history of the NBA.
+        </p>
+    </div>
+    <div class="lakers-pic" id="lakers-title-picture"></div>
+    <script src="PlayOffPage/playoffWP.js"></script>
+</div>
+<div class="page" id="the-end">
+    <div class="three-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="section-title">
+        <h3>"To Be Continued..."</h3>
+    </div>
+    <div>
+        <p class="the-end-intro" id="the-end-intro">
+            2020 has been a tough year for everyone, not just for the NBA organization but for people around this world.
+            Many people suffered and many precious
+            lives were lost during this crisis. However, if everyone can spread <span id="love-text">love</span> instead of hate, and stick together and fight as whole,
+            just like those NBA players striving to win a championship despite the obstacles lying ahead, we then will surely be able to  weather the storm and
+            have a better and brighter tomorrow!
+        </p>
+    </div>
+    <div id="the-ending-division">
+    </div>
+    <script src = "Ending/endingWP.js"></script>
+</div>
+</body>
+</html>
